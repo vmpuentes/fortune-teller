@@ -11,13 +11,13 @@
     <title>Fortune Teller</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <h1> Fortune Teller Quiz </h1>
+    </div>
     <div class="container">
-      <div class="jumbotron">
-        <h1> Fortune Teller Quiz </h1>
-      </div>
       <form id="fortune">
         <div class="form-group">
-          <p>Check all the unlucky events that have happened to you in the past year.</p>
+          <h3>Check all the unlucky events that have happened to you in the past year.</h3>
           <input type="checkbox" name="unlucky-events" value="birdcrap">A bird defecated on your head.<br>
           <input type="checkbox" name="unlucky-events" value="ladder">You accidentally walked under a ladder without noticing.<br>
           <input type="checkbox" name="unlucky-events" value="cat">A black cat crossed in front of you.<br>
@@ -26,16 +26,16 @@
         </div>
 
         <div class="form-group">
-          <p>Check all the lucky events that have happened to you in the past year.</p>
+          <h3>Check all the lucky events that have happened to you in the past year.</h3>
           <input type="checkbox" name="lucky-events" value="itchy-hand">You have an itchy hand.<br>
           <input type="checkbox" name="lucky-events" value="parking">You got the last parking space in a packed lot.<br>
           <input type="checkbox" name="lucky-events" value="menu">You got the last item on a menu that you really wanted.<br>
           <input type="checkbox" name="lucky-events" value="ticket">You got pulled over on the highway for speeding and you were defeinitely speeding, but you got away with a warning.<br>
           <input type="checkbox" name="lucky-events" value="poker">You went all-in trying to bluff raise on the turn and you hit your miracle one-outer on the river.<br>
         </div>
-        <button id="theButton" type="submit">Submit Survey</button>
+        <button id="theButton" type="submit" class="btn btn-info">Submit Survey</button>
       </form>
-        <span id="luckresponse"></span>
+      <h1><span id="luckresponse"></span></h1>
 
 
   </body>

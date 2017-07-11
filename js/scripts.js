@@ -14,9 +14,9 @@ $(function() {
       unlucky.push(runBad);
     });
     if ((lucky.length + unlucky.length) <= 2) {
-      $("#luckresponse").text("buy a lotto ticket");
+      $("#luckresponse").text("Buy a lotto ticket!");
     } else if ((lucky.length + unlucky.length) < 5) {
-      $("#luckresponse").text("Go to the San Juan Islands and find a spotted Unicorn");
+      $("#luckresponse").text("Go to the San Juan Islands and find a spotted Unicorn!");
     } else {
       $("#luckresponse").text("Go see a Psychic for Pete's sake!!!");
     }

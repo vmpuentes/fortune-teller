@@ -1,0 +1,17 @@
+body {
+  background-color: #10993f;
+}
+.container {
+  color: #ffffff;
+}
+.jumbotron h1 {
+  color: #5bc0de;
+  font-size: 100px;
+  text-align: center;
+}
+h3 {
+  color: #5bc0de;
+}
+h1 {
+  color: #5bc0de;
+}
