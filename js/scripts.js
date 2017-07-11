@@ -4,7 +4,7 @@ var unlucky = [];
 $(function() {
   $("form#fortune").submit(function(event) {
     event.preventDefault();
-    $("#submit").hide();
+    $("#theButton").hide();
     $("input:checkbox[name=lucky-events]:checked").each(function() {
       var luckBox = $(this).val();
       lucky.push(luckBox);
@@ -13,5 +13,12 @@ $(function() {
       var runBad = $(this).val();
       unlucky.push(runBad);
     });
+    if ((lucky.length + unlucky.length) <= 2) {
+      $("#luckresponse").text("buy a lotto ticket");
+    } else if ((lucky.length + unlucky.length) < 5) {
+      $("#luckresponse").text("Go to the San Juan Islands and find a spotted Unicorn");
+    } else {
+      $("#luckresponse").text("Go see a Psychic for Pete's sake!!!");
+    }
   });
 });
